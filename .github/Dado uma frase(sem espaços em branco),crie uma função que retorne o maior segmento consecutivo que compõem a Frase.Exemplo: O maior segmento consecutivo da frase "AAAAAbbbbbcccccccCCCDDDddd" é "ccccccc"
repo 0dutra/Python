@@ -1,3 +1,4 @@
+#Dado uma frase(sem espaçoes em Branco),crie uma função que retorne o maior segmento consecutivo que compõem a Frase.Exemplo: O maior segmento consecutivo da frase "AAAAAbbbbbcccccccCCCDDDddd" é "ccccccc"
 def MSG (frase):
     SG = '' #Segmento maior
     if len(frase) > 0:
