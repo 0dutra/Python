@@ -1,0 +1,20 @@
+def MSG (frase):
+    SG = '' #Segmento maior
+    if len(frase) > 0:
+        elemento = frase[0]
+        segmento = frase[0]
+        k = 1
+        while k < len(frase):
+            if elemento != frase[k]:
+                elemento = frase[k]
+                segmento = frase[k]
+            else:
+                segmento += frase[k]
+            if len(segmento)  > len(SG):
+                SG =  segmento
+            k += 1
+    print("Este é o maior segmento consecutivo '{}' ".format(SG))
+frase = input("Digite a frase SEM ESPAÇOS: ")
+print("Essa é a frase '{}' ".format(frase))
+print("")
+MSG(frase)
